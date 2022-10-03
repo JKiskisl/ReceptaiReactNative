@@ -17,7 +17,7 @@ function RecipesScreen({navigation}) {
         <View style={styles.container}>
             {Object.keys(Receptai).map((key)=>(
                 <View>
-                    <Button title={key} onPress={()=>navigation.navigate('Recipe', {listRecipeSubCategory})}/>
+                    <Button title={key} onPress={()=>navigation.navigate('RecipeDetail', {listRecipeSubCategory})}/>
                 </View>
             ))}
         </View>
